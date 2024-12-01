@@ -1,0 +1,210 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            color: #6070FF;
+        }
+
+        .desktop-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .desktop-nav a {
+            text-decoration: none;
+            color: #344563;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .desktop-nav a:hover {
+            color: #6070FF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('desktop-background.svg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            color: #091E42;
+            padding: 50px 0;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links a:hover {
+            opacity: 1;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 50px 0;
+        }
+
+        .project {
+            background: white;
+            border-radius: 16px;
+            display: flex;
+            gap: 30px;
+            padding: 24px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-image {
+            flex: 1;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-details {
+            flex: 1;
+        }
+
+        .project-skills {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .project-skills li {
+            background: #EBEBFF;
+            color: #6070FF;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        /* About Me Section */
+        .about-container {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        .about-details {
+            flex: 1;
+        }
+
+        .skills-container {
+            flex: 1;
+        }
+
+        .skill-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #6070FF;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-top-left-radius: 100px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input, 
+        .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .contact-button {
+            background-color: white;
+            color: #6070FF;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #f4f4f4;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-nav {
+                display: none;
+            }
+
+            .projects, .about-container {
+                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .project {
+                flex-direction: column;
+            }
+        }
